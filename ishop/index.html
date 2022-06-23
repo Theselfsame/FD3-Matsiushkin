@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <title>Ishop</title>
+  </head>
+  <body>
+    <div id="container"></div>
+
+    <script src="https://unpkg.com/react@15/dist/react.js"></script> 
+    <script src="https://unpkg.com/react-dom@15/dist/react-dom.js"></script>
+    
+    <script src="MainComponent.js"></script>
+    <link rel="stylesheet" type="text/css" href="MainComponent.css">
+
+    <script>
+
+      var shopName = 'ISHOP';
+      var goodsList = [
+        {title : 'apple', cost : 15, stock: '14 kg', code: 1,  image: 'https://cdn0.iconfinder.com/data/icons/fruity-3/512/Apple-128.png'},
+        {title : 'pear', cost : 25, stock: '25 kg', code: 2, image: 'https://cdn1.iconfinder.com/data/icons/fresh-fruit-2/128/pear-128.png'},
+        {title : 'banana', cost : 12, stock: '17 kg', code: 3, image: 'https://cdn0.iconfinder.com/data/icons/fruity-3/512/Banana-128.png'},
+        {title : 'watermelon', cost : 23, stock: '50 kg', code: 4, image: 'https://cdn1.iconfinder.com/data/icons/fruit-filled-line-1/64/food_fruit_vegetable_vegetarian_organic_watermelon-128.png'},
+        {title : 'cherry', cost : 35, stock: '11 kg', code: 5, image: 'https://cdn1.iconfinder.com/data/icons/fruit-filled-line-1/64/food_fruit_vegetable_vegetarian_organic_cherry-128.png'},
+        {title : 'strawberry', cost : 35, stock: '41 kg', code: 6, image: 'https://cdn1.iconfinder.com/data/icons/fruit-filled-line-1/64/food_fruit_vegetable_vegetarian_organic_berry_strawberry-128.png'},
+        {title : 'grapefruit', cost : 18, stock: '27 kg', code: 7, image: 'https://cdn1.iconfinder.com/data/icons/fruit-filled-line-1/64/food_fruit_vegetable_vegetarian_organic_orange_grapefruit-128.png'},
+        {title : 'lemon', cost : 25, stock: '50 kg', code: 8, image: 'https://cdn1.iconfinder.com/data/icons/fruit-filled-line-1/64/food_fruit_vegetable_vegetarian_organic_lemon-128.png'},
+      ];
+
+      ReactDOM.render(
+        React.createElement(MainComponent, {shop: shopName, goods: goodsList}),
+        document.getElementById("container")
+      );
+      
+    </script>
+
+  </body>
+</html>
