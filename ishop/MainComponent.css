@@ -1,0 +1,17 @@
+.Greeting {
+    text-align: center;
+}
+.Wrapper {
+    border: 1px solid black;
+
+}
+.Feature {
+    border: 1px solid black;
+    text-align: center;
+    padding: 0px 5px 0px 5px;
+}
+.DataBlock {
+    border: 1px solid green;
+    text-align: center;
+    padding: 0px 5px 0px 5px;
+}
